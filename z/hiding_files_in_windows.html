@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        body{
+            background-color: #171717;
+        }
+        *{
+            font-family: 'Varela Round', sans-serif;
+color: white;
+        }
+#vid{
+    width: 100%;
+    border-radius: 4px;
+    transition: all ease-in-out 1s;
+}
+#vid:hover{
+    box-shadow: 0px 0px 50px 0px black;
+}
+.back{
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    z-index: 100;
+    left: 20px;
+    top: 20px;
+    background-color: #171717;
+    box-shadow: 0px 0px 20px 0px black;
+transition: all ease-in-out 0.4s;
+background-image: url('../images/back.svg');
+background-repeat: no-repeat;
+background-position: center;
+}
+ .back:hover{
+    box-shadow: 0px 0px 50px 0px black;
+
+ }
+ iframe{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 95%;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinding Flies in Windows</title>
+</head>
+<body>
+    <button class="back" onclick="back()">
+
+    </button>
+    <video controls id="vid">
+        <source src="https://sherry65-code.github.io/homeflix.videos/hiding_files_in_windows.mp4">
+    </video><br><br>
+    <h1>
+    Hiding Files in Windows 10 | Two ways
+    
+    </h1><script>
+function back()
+{
+    document.body.innerHTML = `        <iframe src="./mainpage.html" frameborder="0"></iframe>
+`;
+}
+    </script>
+</body>
+</html>
